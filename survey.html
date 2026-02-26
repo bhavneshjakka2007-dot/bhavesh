@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+<title>Survey & Feedback</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="hero-header survey-header">
+</header>
+<nav>
+<a href="index.html">Home</a>
+<a href="research.html">Research</a>
+<a href="awareness.html">Awareness</a>
+<a href="survey.html">Survey</a>
+<a href="media.html">Media</a>
+<a href="chatbot.html">Chatbot</a>
+<a href="community.html">Community</a>
+<a href="resources.html">Resources</a>
+<a href="contact.html">Contact</a>
+</nav>
+<section class="survey-intro">
+    <h1 class="page-title">Survey</h1>
+    <p>
+        Help us understand the impact of online gaming on social interaction 
+        and academic life. Your feedback plays an important role in shaping 
+        research insights and awareness.
+    </p>
+</section>
+<div class="main-container">
+  <div class="survey-intro-box">
+      <h2>Google Form</h2>
+  <p>
+    The button below to visit our Google Form and share your responses.
+    Your participation helps us collect valuable feedback and insights.
+  </p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd3ezZUwXsFMOtcegCGMwn2X22gcf8gUK6o8qg-QvhUysLGoQ/viewform"
+       target="_blank"
+       class="open-form-btn">
+      Open Form
+    </a>
+  </div>
+  <div class="poll-container">
+  <div class="box poll-box">
+  <h2>Quick Poll</h2>
+  <p>How often do you play online games?</p>
+
+  <label>
+    <input type="radio" name="poll" value="daily"> Daily
+  </label>
+  <span class="percent" id="daily-percent">0%</span>
+
+  <label>
+    <input type="radio" name="poll" value="weekly"> Few times a week
+  </label>
+  <span class="percent" id="weekly-percent">0%</span>
+
+  <label>
+    <input type="radio" name="poll" value="occasionally"> Occasionally
+  </label>
+  <span class="percent" id="occasionally-percent">0%</span>
+
+  <label>
+    <input type="radio" name="poll" value="rarely"> Rarely
+  </label>
+  <span class="percent" id="rarely-percent">0%</span>
+</div>
+
+  <!-- Feedback Box -->
+  <div class="box feedback-box">
+    <h2>Your Feedback</h2>
+    <textarea placeholder="Share your thoughts about online gaming and social interaction..."></textarea>
+    <button>Submit Feedback</button>
+  </div>
+
+</div>
+<script>
+let votes = {
+  daily: 1,
+  weekly: 1,
+  occasionally: 1,
+  rarely: 1
+};
+
+const radioButtons = document.querySelectorAll('input[name="poll"]');
+
+radioButtons.forEach(button => {
+  button.addEventListener("change", function() {
+
+    votes[this.value]++;
+
+    let totalVotes = votes.daily + votes.weekly + votes.occasionally + votes.rarely;
+
+    document.getElementById("daily-percent").innerText =
+      Math.round((votes.daily / totalVotes) * 100) + "%";
+
+    document.getElementById("weekly-percent").innerText =
+      Math.round((votes.weekly / totalVotes) * 100) + "%";
+
+    document.getElementById("occasionally-percent").innerText =
+      Math.round((votes.occasionally / totalVotes) * 100) + "%";
+
+    document.getElementById("rarely-percent").innerText =
+      Math.round((votes.rarely / totalVotes) * 100) + "%";
+  });
+});
+</script>
+</body>
+</html>

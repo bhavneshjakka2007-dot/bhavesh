@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Home | Community Gaming</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="hero-header home-header">
+</header>
+<nav>
+<a href="index.html">Home</a>
+<a href="research.html">Research</a>
+<a href="awareness.html">Awareness</a>
+<a href="survey.html">Survey</a>
+<a href="media.html">Media</a>
+<a href="chatbot.html">Chatbot</a>
+<a href="community.html">Community</a>
+<a href="resources.html">Resources</a>
+<a href="contact.html">Contact</a>
+</nav>
+<h1 class="home-title">Game & connect: Community study 
+    on online Gaming and Social Interaction</h1>
+  <div class="hero-container">
+  <div class="hero-box">
+    <span class="hero-badge">🎮 Game & Connect</span>
+    <div class="hero-game">
+    <h1>Gaming</h1>
+    <h1>Community & Awareness</h1>
+    </div>
+
+    <p class="hero-text">
+      Exploring how online gaming shapes social interaction,
+      mental health, and responsible digital behavior.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="research.html" class="btn-primary">Get Started</a>
+      <a href="community.html" class="btn-secondary">Join Community</a>
+    </div>
+
+    <div class="hero-stats">
+      <div><h3>2M+</h3><p>Gamers</p></div>
+      <div><h3>50+</h3><p>Topics</p></div>
+      <div><h3>100%</h3><p>Awareness</p></div>
+    </div>
+
+  </div>
+</div>
+
+ <div class="animated-bg">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+<div class="section-card">
+  <h2>🎮 Introduction</h2>
+<p>
+    Gaming has evolved from simple digital entertainment into a powerful global
+    phenomenon that influences culture, education, and social interaction.
+    Modern gaming environments connect millions of players worldwide, fostering
+    creativity, teamwork, and strategic thinking.
+  </p>
+
+  <p>
+    With the rapid growth of online and competitive gaming, players are exposed
+    to both positive opportunities and potential risks. While gaming can improve
+    cognitive skills, problem-solving abilities, and collaboration, excessive or
+    unregulated gaming may impact mental health, productivity, and social balance.
+  </p>
+
+</div>
+
+<div class="section-card">
+  <h2>🎯 Objectives</h2>
+  <ul>
+    <li>
+      🎮 To study the social, psychological, and cultural impact of gaming on
+      individuals and communities.
+    </li>
+
+    <li>
+      ⚡ To promote responsible gaming habits that encourage time management,
+      self-control, and balanced daily routines.
+    </li>
+
+    <li>
+      🧠 To support digital well-being by spreading awareness about mental health,
+      stress management, and emotional balance in gaming environments.
+    </li>
+
+    <li>
+      🛡️ To educate users about online safety, cyber threats, and privacy
+      protection while interacting on digital gaming platforms.
+    </li>
+
+    <li>
+      🤝 To encourage positive online behavior, teamwork, and respectful
+      communication within gaming communities.
+    </li>
+  </ul>
+</div>
+
+    <div class="scope-section">
+  <h2>🌐 Scope of Awareness</h2>
+
+  <div class="scope-card">
+    <h2><span>🎮</span>Healthy Gaming</h2>
+   <p>
+      Encouraging balanced gaming routines that help players manage screen time,
+      maintain healthy sleep patterns, and avoid gaming addiction.
+    </p>
+  </div>
+
+  <div class="scope-card">
+    <h2><span>🛡️</span>Online Safety</h2>
+   <p>
+      Promotes awareness about cyber threats such as phishing, hacking, and online
+      scams commonly faced by gamers in digital environments.
+    </p>
+  </div>
+
+  <div class="scope-card">
+    <h2><span>🧠</span>Mental Health</h2>
+   <p>
+      Highlights the importance of emotional well-being by managing stress,
+      anxiety, and frustration that may arise during competitive or excessive gaming.
+    </p>
+  </div>
+</div>
+</div>
+
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll() {
+    reveals.forEach(card => {
+        const windowHeight = window.innerHeight;
+        const cardTop = card.getBoundingClientRect().top;
+        const revealPoint = 120;
+
+        if (cardTop < windowHeight - revealPoint) {
+            card.classList.add("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Media Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="hero-header media-header">
+</header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="awareness.html">Awareness</a>
+    <a href="survey.html">Survey</a>
+    <a href="media.html">Media</a>
+    <a href="chatbot.html">Chatbot</a>
+    <a href="community.html">Community</a>
+    <a href="resources.html">Resources</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+<section class="media-intro">
+    <h1 class="page-title">Media</h1>
+    <p>
+        Explore curated videos, posters, and visual resources highlighting 
+        the social impact of online gaming. Learn through engaging and 
+        informative media content.
+    </p>
+</section>
+  <section class="gaming-section">
+    <h1>Visual Insights</h1>
+
+  <div class="card-grid">
+        <div class="card">
+       <h3>Stress Relief & Relaxation</h3>
+      <img src="images/game11.jpg" alt="">
+      <p>Moderate gaming can help reduce stress and provide healthy entertainment.</p>
+    </div>
+
+    <div class="card">
+      <h3>Balanced Lifestyle</h3>
+      <img src="images/game" alt="">
+      <p>Healthy gaming habits include balancing academics, physical activity, and leisure.</p>
+    </div>
+
+    <div class="card">
+      <h3>Positive Aspects of Gaming</h3>
+      <img src="images/game7.jpg" alt="">
+      <p>Moderate gaming can enhance problem-solving, teamwork, and strategic thinking.</p>
+    </div>
+
+         <div class="card">
+             <h3>Teamwork & Communication</h3>
+      <img src="images/game8.jpg" alt="">
+      <p>Multiplayer games can develop collaboration and communication skills.</p>
+    </div>
+
+    <div class="card">
+           <h3>Gaming Addiction</h3>
+      <img src="images/game5.jpg" alt="">
+      <p>Excessive gaming without time control can lead to dependency and impact daily responsibilities.</p>
+    </div>
+
+    <div class="card">
+      <h3>Social Isolation</h3>
+      <img src="images/game6.webp" alt="">
+      <p>Spending too much time gaming may reduce face-to-face social interactions.</p>
+    </div>
+
+  
+
+    <div class="card">
+      <h3>Family Time & Balance</h3>
+      <img src="images/game9.jpg" alt="">
+      <p>Healthy routines include balancing gaming with quality family time and communication.</p>
+    </div>
+
+    <div class="card">
+          <h3>Esports & Career Opportunities</h3>
+      <img src="images/game10" alt=""> 
+      <p>Competitive gaming opens career paths in esports, streaming, and digital content creation.</p>
+    </div>
+
+
+
+  </div>
+</section>
+ <div class="slider-heading">
+    <h2>🎯 Responsible Gaming Posters</h2>
+    <p>Creative posters encouraging balance between gaming and real life</p>
+  </div>
+  <div class="slider">
+  <div class="grid-container  slides">
+    <div class="slide active">
+      <img src="images/img11" alt="Infographics">
+      <p>Online games are more than entertainment — when played responsibly, they can boost creativity, 
+        improve problem-solving skills, and encourage teamwork. 
+        Awareness helps players enjoy gaming while maintaining a healthy balance with real life.
+      </p>
+    </div>
+
+    <div class="slide">
+      <img src="images/img12.webp" alt="Awareness Posters">
+      <p>Games can sharpen focus, strategic thinking, and decision-making abilities. 
+        Understanding the impact of gaming empowers
+         students and players to use games as a tool for learning and growth, not addiction.</p>
+    </div>
+
+    <div class="slide">
+      <img src="images/img13.png" alt="Videos & Tutorials">
+    <p>Video games can have both positive and negative effects on mental health, depending on how they are used. 
+    When played responsibly, games can support emotional well-being, creativity, and social interaction. 
+    However, excessive or unhealthy gaming habits may lead to mental and behavioral challenges.</p>
+    </div>
+    <div class="slide">
+      <img src="images/img14.png" alt="Campaign Media">
+      <p>Online games play an important role in the lives of many students today.
+       When used in moderation, they can support learning and personal growth, but excessive use may affect health and academics.
+       Understanding both sides helps students make better choices.</p>
+    </div>
+  </div>
+
+   <span class="prev">&#10094;</span>
+  <span class="next">&#10095;</span>
+  </div>
+
+<div class="youtube-container">
+<iframe width="560" height="315" 
+src="https://www.youtube.com/embed/Qmm4ufpfmgk?si=OJqODwzH7wlr-o22" 
+title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function showSlide(i) {
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[i].classList.add("active");
+}
+
+document.querySelector(".next").onclick = () => {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+};
+
+document.querySelector(".prev").onclick = () => {
+  index = (index - 1 + slides.length) % slides.length;
+  showSlide(index);
+};
+
+setInterval(() => {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}, 4000);
+</script>
+
+</body>
+</html>
+

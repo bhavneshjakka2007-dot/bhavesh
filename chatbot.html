@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+<title>Chatbot</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="hero-header chatbot-header">
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="awareness.html">Awareness</a>
+  <a href="survey.html">Survey</a>
+  <a href="media.html">Media</a>
+  <a href="chatbot.html">Chatbot</a>
+  <a href="community.html">Community</a>
+  <a href="resources.html">Resources</a>
+  <a href="contact.html">Contact</a>
+</nav>
+<section class="chatbot-intro">
+    <h1 class="page-title">Chatbot</h1>
+    <p>
+        Interact with our AI-powered chatbot to explore insights about 
+        online gaming, social interaction, and healthy digital habits. 
+        Ask questions and get instant guidance.
+    </p>
+</section>
+<div id="chat-icon" onclick="toggleChat()">💬</div>
+<div id="chat-window">
+  <div class="chat-header">
+    🤖 Gaming Chat
+    <span onclick="toggleChat()">✖</span>
+  </div>
+  <div class="chat-body" id="chatBody">
+    <div class="bot-msg">
+      Hi Gamer 🎮! Ask me about gaming, safety, or learning.
+    </div>
+  </div>
+
+  <div class="chat-footer">
+    <input type="text" id="userInput" placeholder="Type a message..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+  <div class="faq-wrapper">
+
+  <h2 class="faq-title">Frequently Asked Questions<br><span>Game & Connect</span></h2>
+
+  <div class="faq-item">
+    <button class="faq-question">What is Game & Connect?</button>
+    <div class="faq-answer">
+      Game & Connect is a platform that promotes responsible gaming, awareness, and community interaction.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">How does online gaming affect social interaction?</button>
+    <div class="faq-answer">
+      Online gaming enhances teamwork, communication, and social bonding across global communities.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">What are the positive effects of online gaming?</button>
+    <div class="faq-answer">
+      Improves problem-solving skills, reflexes, collaboration, and stress relief when balanced properly.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">What are the negative effects of online gaming?</button>
+    <div class="faq-answer">
+      Excessive gaming can cause addiction, reduced physical activity, and mental fatigue.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">How much gaming time is considered healthy?</button>
+    <div class="faq-answer">
+      1–2 hours daily with regular breaks is considered healthy for most players.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Is online gaming safe for students?</button>
+    <div class="faq-answer">
+      Yes, with parental guidance, privacy awareness, and limited screen time.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">How can gamers stay safe online?</button>
+    <div class="faq-answer">
+      Avoid sharing personal info, use strong passwords, and report abusive behavior.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">What role do gaming communities play?</button>
+    <div class="faq-answer">
+      Communities provide support, collaboration, learning, and healthy competition.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">How does Game & Connect promote awareness?</button>
+    <div class="faq-answer">
+      Through campaigns, resources, and educational content on digital well-being.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">How can users participate in Game & Connect?</button>
+    <div class="faq-answer">
+      Users can join discussions, surveys, events, and awareness programs.
+    </div>
+  </div>
+</div>
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const item = button.parentElement;
+    item.classList.toggle("active");
+  });
+});
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>
