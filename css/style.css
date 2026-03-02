@@ -610,7 +610,6 @@ nav a.active {
     letter-spacing: 2px;
     text-transform: uppercase;
     position: relative;
-    margin: 15px auto 25px auto; 
 }
 
 .page-title::after {
