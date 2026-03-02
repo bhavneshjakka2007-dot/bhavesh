@@ -603,7 +603,7 @@ nav a.active {
 
 /* Section Background */
 .awareness-section {
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+   background: linear-gradient(90deg, #00f5ff, #ff00c8);
     padding: 80px 20px;
     text-align: center;
     color: #ffffff;
