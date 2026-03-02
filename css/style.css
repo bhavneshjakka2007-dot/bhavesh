@@ -600,31 +600,6 @@ nav a.active {
     line-height: 1.6;
     color: #d1d5db;
 }
-.awareness-title {
-  font-size: 36px;
-  letter-spacing: 3px;
-  color: #00f2fe;
-  margin-bottom: 20px;
-  position: relative;
-  display: inline-block;
-}
-
-.awareness-title::after {
-  content: "";
-  width: 60%;
-  height: 4px;
-  background: linear-gradient(to right, #00f2fe, #ff00ff);
-  display: block;
-  margin: 10px auto 0;
-  border-radius: 5px;
-}
-
-.awareness-text {
-  font-size: 18px;
-  line-height: 1.8;
-  color: #e0e0e0;
-  margin-top: 20px;
-}
 
 .page-title {
     font-size: 42px;
@@ -635,6 +610,7 @@ nav a.active {
     letter-spacing: 2px;
     text-transform: uppercase;
     position: relative;
+    margin: 15px auto 25px auto; 
 }
 
 .page-title::after {
