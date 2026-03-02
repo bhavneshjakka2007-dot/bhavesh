@@ -613,7 +613,7 @@ nav a.active {
     font-size: 48px;
     font-weight: 700;
     letter-spacing: 4px;
-    color: #7c83ff; /* Purple tone like SURVEY */
+      background: linear-gradient(90deg, #00f5ff, #ff00c8);
     margin-bottom: 20px;
     position: relative;
     display: inline-block;
