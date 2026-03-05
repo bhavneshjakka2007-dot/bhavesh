@@ -601,48 +601,12 @@ nav a.active {
     color: #d1d5db;
 }
 
-/* Section Background */
-.awareness-section {
-    padding: 80px 20px;
-    text-align: center;
-    color: #ffffff;
-}
-
-/* Title Styling */
-.section-title {
-    font-size: 48px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    margin-bottom: 20px;
-    position: relative;
-    display: inline-block;
-}
-
-/* Gradient Underline */
-.section-title::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 4px;
-    margin: 12px auto 0;
-    border-radius: 5px;
-}
-
-/* Description Text */
-.section-description {
-    max-width: 800px;
-    margin: 20px auto 0;
-    font-size: 18px;
-    line-height: 1.8;
-    color: #e0e0e0;
-}
-
 .page-title {
     font-size: 42px;
     font-weight: bold;
+    background: linear-gradient(90deg, #00f5ff, #ff00c8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-      background: linear-gradient(90deg, #00f5ff, #ff00c8);
     letter-spacing: 2px;
     text-transform: uppercase;
     position: relative;
@@ -1262,7 +1226,7 @@ border-radius: 22px;
   font-size: 1.15rem;
   color: #cbd5e1;
   max-width: 720px;
-  margin: auto;
+  margin: auto;a
   line-height: 1.7;
 }
 
